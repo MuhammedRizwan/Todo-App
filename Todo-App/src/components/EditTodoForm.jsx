@@ -3,6 +3,7 @@ import swal from "sweetalert2"
 
 const EditTodoForm = ({ editTodo, task }) => {
   const [value, setValue] = useState(task.task);
+  const regex= /^[a-zA-Z0-9]{5,}$/;
 
   const handleSubmit = (e) => {
     e.preventDefault();
