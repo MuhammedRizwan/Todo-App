@@ -10,7 +10,7 @@ const TodoWrapper = () => {
   const addTodo = (todo) => {
     setTodos([
       ...todos,
-      { id: uuidv4(), task: todo, complete: false, isEditing: false },
+      { id: uuidv4(), task: todo, completed: false, isEditing: false },
     ]);
   };
   const toggleComplete = (id) => {

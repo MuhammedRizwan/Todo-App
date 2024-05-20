@@ -4,13 +4,14 @@ import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
+    console.log(task.complete);
   return (
     <div className="Todo">
       <p
         onClick={() => {
           toggleComplete(task.id);
         }}
-        className={`${task.complete ? "completed" : "incompleted"}`}
+        className={`${task.completed ? "completed" : "incompleted"}`}
       >
         {task.task}
       </p>
