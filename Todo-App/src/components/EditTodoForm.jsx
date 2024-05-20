@@ -32,7 +32,7 @@ const EditTodoForm = ({ editTodo, task }) => {
           })
       return;
     }
-    editTodo(value, task.id);
+    editTodo(value, task.id)
   };
   return (
     <form action="" className="TodoForm" onSubmit={handleSubmit}>
